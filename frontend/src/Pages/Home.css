@@ -1,0 +1,74 @@
+/* General container styles */
+.home-container {
+   color: #fff;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center text for better alignment */
+    padding: 20px;
+}
+
+/* Content box styles */
+.home-content {
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay for readability */
+    border-radius: 15px; /* Rounded corners for content */
+    padding: 30px 40px; /* Adequate padding */
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+}
+
+/* Heading styles */
+.home-content h1 {
+    font-size: 3rem; /* Large heading */
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Paragraph styles */
+.home-content p {
+    font-size: 1.2rem; /* Adjusted font size for easy readability */
+    margin-bottom: 30px;
+    font-weight: 300; /* Lighter text weight for a cleaner look */
+    line-height: 1.6;
+}
+
+/* Button styles */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #007BFF; /* Blue button for contrast */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded button */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.2rem; /* Smaller heading for mobile */
+    }
+
+    .home-content p {
+        font-size: 1rem; /* Adjust paragraph font size for better mobile experience */
+    }
+
+    .cta-button {
+        padding: 12px 25px; /* Smaller padding for button on mobile */
+    }
+}

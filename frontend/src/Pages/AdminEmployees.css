@@ -1,0 +1,86 @@
+/* General Container Style */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 100%; /* Ensure container spans the full width */
+  }
+  
+  /* Header Styling */
+  .admin-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* Increase header font size */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%; /* Make header span the full width */
+  }
+  
+  /* Table Container Style */
+  .table-container {
+    width: 100%; /* Ensure the table container spans full width */
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto; /* Allow horizontal scroll if the table overflows */
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%; /* Ensure table takes the full width of the container */
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 16px 24px; /* Increase padding for more space */
+    text-align: left;
+    font-size: 1.1rem; /* Increase font size for readability */
+  }
+  
+  .table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Add a clear border to headers */
+  }
+  
+  .table td {
+    border-bottom: 1px solid #ddd;
+    color: #555; /* Darken text for better visibility */
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add a zebra-striping effect for better row visibility */
+  }
+  
+  /* Circular Progress */
+  .circular-progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .admin-header {
+      font-size: 1.8rem; /* Slightly smaller for mobile */
+    }
+  
+    /* Make the table more responsive */
+    .table-container {
+      width: 100%; /* Full width for mobile */
+      padding: 15px;
+    }
+  
+    .table th, .table td {
+      font-size: 1rem; /* Adjust font size for mobile */
+      padding: 12px 16px; /* Increase padding for mobile */
+    }
+  }
+  

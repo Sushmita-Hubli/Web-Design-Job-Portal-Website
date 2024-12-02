@@ -1,0 +1,83 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;           /* Sticks navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;    /* Dark background for visibility */
+    color: #fff;               /* White text for contrast */
+    padding: 0 20px;
+    z-index: 9999;             /* High z-index to ensure it stays above other content */
+    font-family: Arial, sans-serif;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.navbar-links li {
+    position: relative;
+  
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+ 
+}
+
+.one,.two,.three,.four,.five
+{
+    margin-top: 15px;
+}
+
+.navbar-links a:hover {
+    color: #00b4d8;           /* Light blue on hover */
+}
+
+/* Extra spacing for the main content so it doesn't overlap with navbar */
+.main-content {
+    padding-top: 70px;         /* Adjust for navbar height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}

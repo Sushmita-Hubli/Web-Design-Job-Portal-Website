@@ -1,0 +1,102 @@
+/* General styling for the AddJobs page */
+.add-job-form {
+    width: 100%;  /* Increase the width of the form */
+    max-width: 950px;  /* Ensure it doesn't stretch too wide */
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;  /* Increase padding for better spacing */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keep items starting from top */
+    gap: 2px;  /* Reduce the gap between fields to avoid excessive space */
+    height: 650px;  /* Allow height to adjust dynamically */
+   }
+
+/* Body styling to center the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Ensure the body takes full screen height */
+ 
+    background-color: #f4f4f4;  /* Light background color */
+}
+
+/* Heading styling */
+.add-job-form h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 5px;  /* Slightly reduce bottom margin */
+}
+
+/* Form layout */
+.add-job-form form {
+    width: 100%;
+      gap: 2px;  /* Reduce gap between form fields */
+}
+
+
+
+/* Styling for labels */
+.add-job-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+/* Input and textarea styling */
+.add-job-form input,
+.add-job-form textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Focus styling */
+.add-job-form input:focus,
+.add-job-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Styling for file input */
+.add-job-form input[type="file"] {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.add-job-form button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Button hover effect */
+.add-job-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Textarea adjustment (ensuring it's not too tall) */
+.add-job-form textarea {
+    height: 120px; /* Reduce height of the textarea */
+    resize: none; /* Disable resizing of the textarea */
+}
+

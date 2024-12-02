@@ -1,0 +1,15 @@
+.footer-container {
+    background-color: #333 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 10px !important;
+    position: fixed !important; /* Fix the footer at the bottom */
+    bottom: 0 !important; /* Ensure it's at the bottom of the screen */
+    left: 0 !important; /* Align to the left edge of the screen */
+    width: 100% !important; /* Make the footer full width */
+    font-size: 0.9rem !important;
+}
+
+.footer-container p {
+    margin: 0 !important;
+}
